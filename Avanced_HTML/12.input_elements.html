@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input Elements</title>
+    </head>
+
+    <body>
+        <form action="11.forms.html" method="GET">
+            <!-- Creating an input field -->
+            <div>
+                <label for="firstname">First Name:</label>
+                <input required="required" type="text" name="firstname" id="fristname">
+            </div>
+
+            <!-- Creating a checkbox filed -->
+            <div>
+                <label for="checkbox_field">Checkbox:</label>
+                <input required="required" type="checkbox" value="1" name="checkbox">
+            </div>
+            <!-- Creating a radio button -->
+            <div>
+                <input required="required" type="radio" name="radio_test" value="1"> 1
+                <input required="required" type="radio" name="radio_test" value="2"> 2
+                <input required="required" type="radio" name="radio_test" value="3"> 3
+            </div>
+
+            <!-- Creating date field -->
+            <div>
+                <label for="">Date</label>
+                <input required="required" type="date" name="date">
+            </div>
+
+            <!-- Creating an email field -->
+            <div>
+                <label for="email">Email:</label>
+                <input required="required" type="email" name="email" id="">
+            </div>
+
+            <!-- Creatin a hidden field -->
+            <div>
+                <label for="hidden">Hidden:</label>
+                <input required="required" type="hidden" name="hidden" value="is_hidden">
+            </div>
+
+            <!-- Creating a number field -->
+            <div>
+                <label for="number">Number:</label>
+                <input required="required" type="number" name="number" step="0.5" max="50" min="0">
+            </div>
+
+            <!-- Creating a password field -->
+            <div>
+                <label for="password">Password:</label>
+                <input required="required" type="password" name="password" placeholder="Ghost text">
+            </div>
+
+            <!-- Creating a URL field -->
+            <div>
+                <label for="url">URL:</label>
+                <input type="url" name="url" value="https://codingforeverybody.com">
+            </div>
+
+            <!-- Creating afile field -->
+            <div>
+                <label for="file">File Upload:</label>
+                <input required="required" type="file" name="file" value="">
+            </div>
+
+            <!-- Creating a custom text for a button -->
+            <div>
+                <input required="required" type="submit" value="Custom Text For A Button" name="submit">
+            </div>
+        </form>
+    </body>
+</html>

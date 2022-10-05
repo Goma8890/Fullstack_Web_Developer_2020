@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getElementById</title>
+  </head>
+
+  <body>
+    <h1 id="test">Hello World</h1>
+    <script>
+      var test = document.getElementById("test");
+      //   Variables like this are called camelCased variables. Ther's also snake_case="" and all lower case is shardtoread=""
+      var oldText = test.innerHTML;
+      //   test.innerHTML = "<u>Hello</u> World";
+      test.innerHTML = "Hi welcome to JavaScript for beginners";
+    </script>
+  </body>
+</html>

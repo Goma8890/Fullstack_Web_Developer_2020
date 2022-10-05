@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Font Size</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				font-family: 'Shrikhand', cursive;
+			}
+
+			#body{
+				padding: 0 10px 20px;
+			}
+
+			#page-title{
+				margin: 0 0 25px 0;
+				padding: 0;
+				border-bottom: 1px solid blue;
+				font-family: 'Roboto', Arial, sans-serif;
+			}
+
+			.height1{
+				/*font-size: 80px;*/
+				/*font-size: 100%;*/
+				font-size: 10vh;
+			}
+
+			.height2{
+				/*font-size: 50px;*/
+				font-size: 50%
+				font-size: 10cm;
+			}
+
+			.height3{
+				/*font-size: 30px;*/
+				font-size: 30%;
+				font-size: 1em;
+			}
+
+			.height4{
+				/*font-size: 15px;*/
+				font-size: 15%;
+				font-size: 2rem;
+			}
+
+			.height5{
+				/*font-size: 2px;*/
+				font-size: 20%;
+			}
+
+			/*Does not work*/
+			.height6{
+				font-size: -40px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>CSS Course by Monteiro</nav>
+
+		<div id="body">
+			<h1 id="page-title">Font Size</h1>
+			<!-- Learning code area -->
+
+			<p class="height1">80px</p>
+			<p class="height2">50px</p>
+			<p class="height3">30px</p>
+			<p class="height4">15px</p>
+			<p class="height5">2px</p>
+			<p class="height6">-10px</p>
+
+			<!-- End of learning code area -->
+		</div>
+	</body>
+</html>

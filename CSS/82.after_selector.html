@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pseudo Selector:: After Selector</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+				padding-top: 48px;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				position: fixed;
+				left: 0;
+				top: 0;
+				/*right: 0;*/
+				width: 100%;
+			}
+
+			#body{
+				padding: 0 10px 20px;
+				height: 600px;
+			}
+
+			#page-title{
+				margin: 0 0 25px 0;
+				padding: 0;
+				border-bottom: 1px solid blue;
+				font-family: 'Roboto', Arial, sans-serif;
+			}
+
+			#footer{
+				bottom: 10px;
+				position: fixed;
+				left: 10px;
+			}
+
+			#footer a{
+				color: darkred;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 13px;
+			}
+
+			.block{
+				display: block;
+				float: right;
+				width: 200px;
+				height: 200px;
+				margin: 250px auto;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				position: relative;
+				/*z-index: 0;*/
+			}
+
+			.block::before{
+				display: inline-block;
+				content: ' ';
+				color: white;
+				background-color: aquamarine;
+				position: absolute;
+				left: -20px;
+				top: -20px;
+				width: 200px;
+				height: 200px;
+				z-index: -1;
+			}
+
+			.block::after{
+				display: inline-block;
+				content: ' ';
+				color: white;
+				background-color: orange;
+				position: absolute;
+				right: -20px;
+				bottom: -20px;
+				width: 200px;
+				height: 200px;
+				z-index: 0;
+			}
+
+			a[href^='https']{
+				text-decoration: none;
+			}
+
+			a[href^='https']:after{
+				content: ' (Secure)';
+				font-size: 12px;
+				color: green;
+			}	
+
+			.label.deal::before{
+				content: 'DEAL!!!!';
+				background-color: black;
+				display: inline-block;
+				padding: 5px;
+				color: orange;
+				font-size: 14px;
+			}		
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="https://google.com">
+				CSS Course by Monteiro
+				<i class="fa fa-twitter"></i>
+			</a>
+		</nav>
+
+		<div id="body">
+			<h1 id="page-title">Pseudo Selector:: After Selector</h1>
+			<!-- Learning code area -->
+
+			<p>Welcome to my website.........For more info <a href="https://read more.html">click here</a></p>
+
+			<p>
+				something .....................dark sie something....
+
+				<span class="label deal">$98.00</span>
+			</p>
+
+			<div class="block"></div>
+			
+		</div>
+			<!-- End of Learning code area -->
+		<div id="footer">
+			<a id="fot" href="https://arkmont.com//?ref=css-course" target="_blank">
+				Arkmount.com
+			</a>
+		</div>
+	</body>
+</html>

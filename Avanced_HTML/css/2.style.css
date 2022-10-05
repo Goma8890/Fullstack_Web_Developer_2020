@@ -1,0 +1,31 @@
+nav {
+  background-color: hotpink;
+  color: black;
+  height: 80px;
+  text-align: center;
+}
+
+section {
+  background-color: blue;
+  padding: 10px;
+  height: 80vh;
+}
+
+article {
+  color: white;
+  text-align: center;
+}
+
+aside {
+  background-color: black;
+  color: white;
+  float: right;
+  height: 500px;
+  width: 300px;
+  text-align: center;
+}
+footer {
+  background-color: chocolate;
+  height: 100px;
+  text-align: center;
+}

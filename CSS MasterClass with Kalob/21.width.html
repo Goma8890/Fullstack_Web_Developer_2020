@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Width</title>
+    <style>
+      .class {
+        width: 50vw;
+        background-color: violet;
+      }
+
+      .three-quarters-ish {
+        width: calc(75% - 50px + 20px);
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="class">This should be 50vw wide</div>
+
+    <!-- Using Calc() -->
+    <div class="three-quarters-ish">75% - 80px</div>
+    <!-- Play around with that code and try the following scenarios:
+    ● A percent minus a percent
+    ● A percent minus a pixel value
+    ● A pixel value minus a pixel value
+    ● A percent minus a pixel value plus another pixel value -->
+  </body>
+</html>

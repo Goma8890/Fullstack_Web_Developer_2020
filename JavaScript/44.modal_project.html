@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Project</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    /> -->
+    <style>
+      .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        border: 1px solid greenyellow;
+        background-color: rgb(243, 247, 243);
+        box-shadow: 5px 5px black;
+        width: 80%;
+        max-width: 800px;
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>OOP Nodal</h1>
+
+    <ul>
+      <li>Create a button that will open a modal.</li>
+      <li>Create a button that will close a modal.</li>
+      <li>
+        Write all of this inside of an Object or a class, including the
+        fucntion/methods.
+      </li>
+    </ul>
+
+    <div class="modal js-modal">
+      <h1 class="js-modal-title">This is a modal</h1>
+      <p class="js-modal-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        accusamus obcaecati labore, aliquam fugit mollitia qui ab nemo dolores
+        nam iusto odit cumque distinctio explicabo temporibus magnam beatae
+        maxime eos velit voluptates possimus! Explicabo cum cumque quidem
+        tempore non placeat autem, nam quisquam tempora culpa, distinctio harum,
+        obcaecati eius incidunt?
+      </p>
+      <p><button class="js-close-modal">Close Modal</button></p>
+    </div>
+
+    <button class="js-open-modal">Open Modal</button>
+
+    <script>
+      // const openBtn = document.querySelector(".js-open-modal");
+      // const closeBtn = document.querySelector(".js-close-modal");
+      // const modal = document.querySelector(".js-modal");
+      // openBtn.addEventListener("click", function (event) {
+      //   modal.style.display = "initial";
+      // });
+
+      // closeBtn.addEventListener("click", function (event) {
+      //   modal.style.display = "none";
+      // });
+
+      // Using a Class
+      class Modal {
+        constructor(title = "Default title", text = "Default text") {
+          this.modal = document.querySelector(".js-modal");
+          this.title = title;
+          this.text = text;
+          // if (title !== undefined) {
+          //   this.modal.querySelector("js-modal-title").innerText = title;
+          // }
+          // if (text !== undefined) {
+          //   this.modal.querySelector("js-modal-text").innerText = text;
+          // }
+        }
+
+        open() {
+          this.modal.style.display = "initial";
+        }
+
+        close() {
+          this.modal.style.display = "none";
+        }
+
+        changeContent() {
+          if (this.title !== undefined) {
+            this.modal.querySelector("js-modal-title").innerText = this.title;
+          }
+          if (this.text !== undefined) {
+            this.modal.querySelector("js-modal-text").innerText = this.text;
+          }
+        }
+      }
+
+      const openBtn = document.querySelector(".js-open-modal");
+      const closeBtn = document.querySelector(".js-close-modal");
+      const modal = new Modal("New title", "New text in here");
+
+      openBtn.addEventListener("click", function (event) {
+        modal.open();
+      });
+
+      closeBtn.addEventListener("click", function (event) {
+        modal.close();
+      });
+    </script>
+
+    <!-- Bootstrap JS Requirements -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>

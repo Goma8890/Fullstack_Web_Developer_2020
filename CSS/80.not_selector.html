@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pseudo Selector: Before Selector</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+				padding-top: 48px;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				position: fixed;
+				left: 0;
+				top: 0;
+				/*right: 0;*/
+				width: 100%;
+			}
+
+			#body{
+				padding: 0 10px 20px;
+				height: 600px;
+			}
+
+			#page-title{
+				margin: 0 0 25px 0;
+				padding: 0;
+				border-bottom: 1px solid blue;
+				font-family: 'Roboto', Arial, sans-serif;
+			}
+
+			#footer{
+				padding: 10px;
+				position: fixed;
+			}
+
+			#footer a{
+				color: darkred;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 13px;
+			}
+
+			.para:not(.graph){
+				background-color: yellow;
+				color: white;
+				display: none;
+			}
+
+			.color{
+				color: blue;
+			}
+
+			.red{
+				color: red;
+			}
+
+			.purple{
+				color: purple;
+			}
+
+			.color:not(.red):not(.purple){
+				color: orange;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="https://google.com">
+				CSS Course by Monteiro
+				<i class="fa fa-twitter"></i>
+			</a>
+		</nav>
+
+		<div id="body">
+			<h1 id="page-title">Pseudo Selector: Not Selector</h1>
+			<!-- Learning code area -->
+
+			<p class="para graph">paragraph1</p>
+			<p class="para graph">paragraph2</p>
+			<p class="para">paragraph3</p>
+			<p class="para graph">paragraph4</p>
+			<p class="para graph">paragraph5</p>
+
+			<p>
+				Lorem ipsum dolor <span class="color">sit amet </span>consectetur adipisicing, elit. Rem <span class="color purple">sit consequuntur, </span> laborum <span class="color">optio</span> quas quidem dolorum, sed hic nam <span class="color">necessitatibus </span>neque illo esse <span class="color">aliquam</span> quod <span class="color red">inventore.</span>
+			</p>
+			
+		</div>
+			<!-- End of Learning code area -->
+		<div id="footer">
+			<a id="fot" href="https://arkmont.com//?ref=css-course" target="_blank">
+				Arkmount.com
+			</a>
+		</div>
+	</body>
+</html>

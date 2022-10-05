@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opacity</title>
+    <style>
+      .parent {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-color: red;
+        padding: 50px;
+        background-image: url("https://images.pexels.com/photos/172292/pexels-photo-172292.jpeg?w=200");
+      }
+
+      .child {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        background-color: white;
+        border: 1px solid black;
+        transition: opacity 250ms ease;
+        background-image: url("https://images.pexels.com/photos/9135/sky-clouds-blue-horizon.jpeg?w=200");
+        background-size: cover;
+        box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .parent:hover .child {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

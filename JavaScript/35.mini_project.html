@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project #5</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <h1>Mini Project #5: Event Listeners</h1>
+
+    <ul>
+      <li>Create 3 input elements</li>
+      <li>
+        Change the background color, text color and page font size as you type
+      </li>
+    </ul>
+
+    <div>
+      <label for="bgColor">Background color:</label>
+      <input
+        type="text"
+        class="form-control js-bg-color"
+        id="bgColor"
+        style="padding: 10px; font-size: 10px"
+      />
+    </div>
+    <div>
+      <label for="textColor">Text color:</label>
+      <input
+        type="text"
+        class="form-control js-text-color"
+        id="textColor"
+        style="padding: 10px; font-size: 10px"
+      />
+    </div>
+    <div>
+      <label for="fontSize">Font Size:</label>
+      <input
+        type="text"
+        class="form-control js-font-size"
+        id="fontSize"
+        style="padding: 10px; font-size: 10px"
+      />
+    </div>
+
+    <script>
+      var bgColor = document.querySelector(".js-bg-color");
+      var textColor = document.querySelector(".js-text-color");
+      var fontSize = document.querySelector(".js-font-size");
+      var body = document.querySelector("body");
+
+      bgColor.addEventListener("keyup", function (event) {
+        body.style.backgroundColor = event.target.value;
+      });
+
+      textColor.addEventListener("keyup", function (event) {
+        body.style.color = event.target.value;
+      });
+
+      fontSize.addEventListener("keyup", function (event) {
+        body.style.fontSize = event.target.value + "px";
+      });
+    </script>
+
+    <!-- Bootstrap JS Requirements -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

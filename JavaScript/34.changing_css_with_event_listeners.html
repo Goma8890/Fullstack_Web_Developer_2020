@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing CSS With Event Listeners</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <input type="text" class="form-control js-name" />
+
+    <h1>Changing CSS with Event Listeners</h1>
+    <div>
+      <label for="">Background color</label>
+      <input
+        type="text"
+        class="js-bg-color"
+        style="padding: 30px; font-size: 30px"
+      />
+    </div>
+    <div>
+      <label for="">Text color</label>
+      <input
+        type="text"
+        class="js-text-color"
+        style="padding: 30px; font-size: 30px"
+      />
+    </div>
+
+    <script>
+      var bgcolor = document.querySelector(".js-bg-color");
+
+      //   bgcolor.style.backgroundColor = "red";
+      bgcolor.style.borderRadius = "10px";
+      bgcolor.style.border = "5px solid black";
+
+      var textcolor = document.querySelector(".js-text-color");
+      var body = document.querySelector("body");
+      body.style.backgroundColor = "red";
+      body.style.color = "white";
+
+      bgcolor.addEventListener("keyup", function (event) {
+        var color = event.target.value;
+        switch (color) {
+          case "red":
+          case "white":
+          case "blue":
+            body.style.backgroundColor = color;
+            break;
+          default:
+            body.style.backgroundColor = "green";
+            break;
+        }
+        // console.log("bg color", event.target.value);
+        // body.style.backgroundColor = event.target.value;
+      });
+
+      textcolor.addEventListener("keyup", function (event) {
+        // console.log("text color", event.target.value);
+        body.style.color = event.target.value;
+      });
+    </script>
+
+    <!-- Bootstrap JS Requirements -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

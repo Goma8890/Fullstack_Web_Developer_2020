@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Word Wrap</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+				padding-top: 48px;
+				font-family: 'Roboto', Arial, sans-serif;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				position: fixed;
+				left: 0;
+				top: 0;
+				/*right: 0;*/
+				width: 100%;
+			}
+
+			nav a{
+				color: black;
+				text-decoration: none;
+			}
+
+			#body{
+				padding: 0 10px 20px;
+				height: 600px;
+			}
+
+			#page-title{
+				margin: 0 0 25px 0;
+				padding: 0;
+				border-bottom: 1px solid blue;
+				f
+			}
+
+			#footer{
+				bottom: 10px;
+				position: fixed;
+				left: 10px;
+			}
+
+			#footer a{
+				color: darkred;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 13px;
+			}
+
+			.text-area{
+				width: 200px;
+				border: 1px solid #000;
+				/*overflow: hidden;*/
+				word-wrap: break-word;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="https://google.com">
+				CSS Course by Monteiro
+				<i class="fa fa-twitter"></i>
+			</a>
+		</nav>
+
+		<div id="body">
+			<h1 id="page-title">Word Wrap</h1>
+			<!-- Learning code area -->
+
+			<div class="text-area clip">
+				The quick brown fox jumps over the lazy puppersssssssssssssssssssssssssssssssssssuperlongwordsnnknklnlklkjknkjnknkk.
+			</div>
+			
+		</div>
+			<!-- End of Learning code area -->
+		<div id="footer">
+			<a id="fot" href="https://arkmont.com//?ref=css-course" target="_blank">
+				Arkmount.com
+			</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Links</title>
+    <style>
+      a {
+        color: black;
+      }
+
+      /* The Hoverstate */
+      a:hover {
+        color: yellow;
+      }
+
+      /* More Pseudo Selectors */
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: blue;
+      }
+
+      a:active {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://kalob.io/"> Kalob.io </a>
+    <p>The 4 pseudo selectors are:</p>
+    <ol>
+      <li>:link -- To define the link styling</li>
+      <li>:visited -- To define the styling when a link was already clicked</li>
+      <li>
+        :hover -- To define the styling when you put your mouse over a link
+      </li>
+      <li>
+        :active -- To define the styling when you’ve clicked on the link, but
+        haven’t let go yet
+      </li>
+    </ol>
+  </body>
+</html>

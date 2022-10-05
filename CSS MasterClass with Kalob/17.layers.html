@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layers</title>
+    <style>
+      .container {
+        position: relative;
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px dashed rgba(0, 0, 0, 0.5); /* RGBA */
+        /* Center the block */
+        margin: 0 auto;
+      }
+
+      /* Grouping selectors, we'll overwrite .layer2 later */
+      .layer1,
+      .layer2 {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        height: 50%;
+        width: 50%;
+        border: 1px dotted #000;
+        background-color: green;
+        opacity: 0.7;
+      }
+
+      /* Overwrite layer2 properties */
+      .layer2 {
+        background-color: red;
+        top: 35%;
+        left: 35%;
+        opacity: 1;
+      }
+
+      /* Adding z-index to .layer1 */
+      .layer1 {
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="layer1"></div>
+      <div class="layer2"></div>
+    </div>
+  </body>
+</html>

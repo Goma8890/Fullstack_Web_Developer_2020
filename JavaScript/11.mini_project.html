@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project #2</title>
+  </head>
+  <body>
+    <p>
+      This is a link:
+      <span id="link"></span>
+    </p>
+    <script>
+      var url = prompt("Enter a URL");
+
+      //   if (url.substr(0, 4) == "http") {
+      //     console.log("The URL is good");
+      //   } else {
+      //     console.warn("Bad URL");
+      //     url = "http://" + url;
+      //   }
+
+      // if (url.substr(0, 4) == "http") {
+      //   } else {
+      //     url = "http://" + url;
+      //   }
+
+      if (url == null) {
+        // alert("CANCEL THIS QUICKLY");
+        console.error("Missing input");
+      } else {
+        if (url.substr(0, 4) != "http") {
+          url = "http://" + url;
+        }
+
+        var spanNode = document.getElementById("link");
+        var html = "<a href='" + url + "'>" + url + "</a>";
+        spanNode.innerHTML = html;
+      }
+
+      //   if (url.substr(0, 4) != "http") {
+      //       url = "http://" + url;
+      //     }
+
+      //     var spanNode = document.getElementById("link");
+      //     var html = "<a href='" + url + "'>" + url + "</a>";
+      //     spanNode.innerHTML = html;
+
+      //   spanNode.innerHTML = url;
+      //   spanNode.innerHTML = "<a href='" + url + "'>" + url + "</a>";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Manipulation</title>
+  </head>
+
+  <body>
+    <h1 id="sentence">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quod
+      maiores eum rem perferendis, libero aperiam non quo? Laudantium,
+      recusandae? Numquam voluptatum molestias error dignissimos quas quae
+      facere dolore dolores. Quidem necessitatibus voluptatum cumque laudantium
+      fuga modi, eius in maxime ad autem accusamus, cupiditate consequuntur
+      sapiente quam est ex ullam tempora laboriosam, saepe nobis dicta quasi!
+      Natus saepe nesciunt, rerum veniam ipsa nisi labore distinctio possimus
+      eius sit nobis perspiciatis nihil quisquam aliquid animi! Ab labore
+      exercitationem, quasi explicabo esse ut aperiam totam, dolore magni rem,
+      tempora id unde est molestias facilis.
+    </h1>
+    <script>
+      // We gonna use toLowerCase, toUpperCase, split, join, slice and substr
+      var sentenceNode = document.getElementById("sentence");
+      var sentence = sentenceNode.innerText;
+
+      //   console.log("sentence:", sentence);
+
+      var upperSentence = sentence.toUpperCase();
+      var lowerSentence = sentence.toLowerCase();
+      var firstTenChars = sentence.substr(0, 11);
+
+      //   "Split anything in here".split(" ");
+      var allwords = sentence.split(" ");
+      //   console.log(allwords);
+
+      var bracketwords = "(" + allwords.join(")(") + ")";
+      //   sentenceNode.innerText = bracketwords;
+
+      var firstThreeWords = allwords.slice(0, 3);
+
+      var middleWords = allwords.slice(5, 10);
+      var makeSentence = middleWords.join(" ");
+
+      sentenceNode.innerText = makeSentence;
+    </script>
+  </body>
+</html>

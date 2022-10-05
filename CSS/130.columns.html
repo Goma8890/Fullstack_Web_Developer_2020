@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Columns</title>
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			html{
+				height: 100%;
+			}
+
+			@font-face{
+				font-family: kalobsNewFont;
+				src: url('fonts/Roboto-Regular.ttf');
+			}
+
+			@font-face{
+				font-family: kalobsNewFontBI;
+				src: url('fonts/Roboto-BoldItalic.ttf');
+			}
+
+			body{
+				margin: 0;
+				padding: 0;
+				background: #f5f5f5;
+				background: linear-gradient(to bottom, #f5f5f5, #fff);
+				/*padding-top: 48px;*/
+				height: 100%;
+				font-family: kalobsNewFont, Arial, sans-serif;
+				overflow: hidden;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				position: fixed;
+				left: 0;
+				top: 0;
+				/*right: 0;*/
+				width: 100%;
+				font-family: 'Shrikhand', cursive;
+			}
+
+			nav a{
+				color: black;
+				text-decoration: none;
+			}
+
+			#body{
+				padding: 55PX 10px 20px;
+				/*height: 600px;*/
+			}
+
+			#page-title{
+				margin: 0 0 25px 0;
+				padding: 0;
+				border-bottom: 1px solid blue;
+				font-weight: 900;
+				font-family: kalobsNewFontBI;
+				color: #fff;
+				text-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+			}
+
+			#footer{
+				bottom: 10px;
+				position: fixed;
+				left: 10px;
+			}
+
+			#footer a{
+				color: darkred;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 13px;
+			}
+
+			#vid{
+				border: 1px solid red;
+			}
+
+			#col{
+				text-align: justify;
+				columns: 4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="https://google.com">
+				CSS Course by Monteiro
+				<i class="fa fa-twitter"></i>
+			</a>
+		</nav>
+
+		<div id="body">
+			<h1 id="page-title">Columns</h1>
+			<!-- Learning code area -->
+
+			<div id="col">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae minima blanditiis dolore enim repellat ipsam placeat at aliquid obcaecati beatae pariatur, tenetur soluta totam quo. Nihil possimus eveniet animi accusantium dolore repellat alias dolorum id facilis nemo, fugit, aut mollitia recusandae. 
+				<div id="vid">Test2222</div>
+				Nam perspiciatis eius id commodi nihil deserunt modi maxime inventore, assumenda sit nemo et molestiae temporibus ullam debitis ducimus eum atque ea vero fugit laboriosam praesentium earum facere. Aut atque quidem tenetur eaque facilis debitis molestiae, sint natus obcaecati aliquid? Saepe rerum ipsum, enim totam laborum rem beatae dolore, repudiandae incidunt, aperiam, dolores explicabo qui voluptatibus cumque vel consectetur?
+
+				<div id="vid">Test</div>
+			</div>
+			
+		</div>
+			<!-- End of Learning code area -->
+		<div id="footer">
+			<a id="fot" href="https://arkmont.com//?ref=css-course" target="_blank">
+				Arkmount.com
+			</a>
+		</div>
+	</body>
+</html>

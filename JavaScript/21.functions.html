@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      // function greeting() {
+      //   console.log("Hello world!");
+      // }
+
+      // greeting();
+
+      // function greeting(name, age) {
+      //   console.log("Hello " + name);
+      //   console.log("Age is " + age);
+      // }
+
+      // greeting("Tony", 32);
+
+      // function greeting(name = "Tony", age = 32) {
+      //   console.log("Hello " + name);
+      //   console.log("Age is " + age);
+      // }
+
+      // greeting();
+
+      function greeting(name = "Toy", age = 4) {
+        console.log("Hello " + name);
+        console.log("Age is " + age);
+
+        // return "SpaceX";
+        // return age ** age;
+        return name;
+        // Down here
+        console.log("DOES NOT WORK");
+      }
+
+      // var newNumber = greeting();
+
+      var defaultName = greeting();
+      var tony = greeting("Tony", 32);
+      var lindy = greeting("Lindy", 30);
+    </script>
+  </body>
+</html>

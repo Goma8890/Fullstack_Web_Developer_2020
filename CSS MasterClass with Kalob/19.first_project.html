@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Project</title>
+    <style>
+      .blue-navbar {
+        position: fixed;
+        background-color: rgb(81, 81, 230);
+        color: white;
+        /* border: 1px solid red; */
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+        font-family: "Arial", sans-serif;
+        z-index: 1;
+      }
+
+      .left-navigation {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* border: 1px solid black; */
+        width: 10%;
+        height: 100%;
+        background-color: rgb(158, 157, 157);
+        color: black;
+        /* margin-top: 55px; */
+        /* padding-left: 10px; */
+        padding-top: 50px;
+        /* padding-bottom: 20px; */
+        /* opacity: 0.5; */
+      }
+
+      h3 {
+        padding-left: 10px;
+      }
+
+      ol {
+        background-color: rgb(211, 207, 207);
+        padding: 10px;
+        margin: 0;
+        list-style: none;
+        /* text-decoration: underline; */
+        /* width: 85%; */
+        /* margin-top: 2px; */
+        /* margin-bottom: 2px; */
+      }
+
+      li {
+        /* border: 1px solid black; */
+        width: 107%;
+        /* text-decoration: underline; */
+        /* height: 50%; */
+        /* display: block; */
+        /* text-align: center; */
+        /* margin-top: 2px; */
+        /* margin-bottom: 2px; */
+        /* border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999; */
+        opacity: 0.5;
+        transition: opacity 500ms linear;
+      }
+
+      li:hover {
+        opacity: 1;
+        color: blueviolet;
+        cursor: pointer;
+      }
+
+      body {
+        background-color: WHITE;
+        /* border: 1px solid blue; */
+        /* width: 100%; */
+        padding: 30px;
+        margin-top: 20px;
+        margin-left: 150px;
+        text-align: justify;
+        overflow: hidden;
+      }
+
+      h1 {
+        text-align: center;
+        color: black;
+      }
+
+      a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+
+      a:hover {
+        color: brown;
+      }
+
+      a:active {
+        color: chartreuse;
+      }
+
+      .selector {
+        background-color: cornflowerblue;
+        font-size: 20px;
+        /* visibility: hidden; */
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: aqua;
+        color: black;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blue-navbar">LOGO</div>
+    <div class="left-navigation">
+      <h3>Navigation</h3>
+      <ol>
+        <li>
+          Link One
+          <hr />
+        </li>
+
+        <li>
+          Link Two
+          <hr />
+        </li>
+
+        <li>
+          Link Three
+          <hr />
+        </li>
+
+        <li>Link Four</li>
+      </ol>
+    </div>
+
+    <h1>Page Title</h1>
+    <p>
+      <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit.
+      Ea officia beatae, consequatur minima debitis dolorum? Deserunt impedit
+      iure commodi, consectetur nulla quod magnam! Saepe quos quasi provident
+      porro magni fuga. <em>Lorem ipsum,</em> dolor sit amet consectetur
+      adipisicing elit. Laborum facilis quaerat quisquam rerum ea aperiam,
+      tempore itaque deserunt, eos labore tenetur explicabo impedit sequi
+      eligendi dolores iusto voluptate. Nulla, consequuntur? Lorem ipsum dolor
+      sit amet consectetur <i>adipisicing</i> elit. Id enim error tempora porro
+      sunt inventore maxime, doloremque autem eos doloribus quibusdam aspernatur
+      explicabo officiis, <b>earum possimus? Officia, deleniti! Soluta,</b>
+      repellendus.
+      <a href="https://www.google.com">Click Here</a>
+      <span class="selector">Hello World</span>
+    </p>
+  </body>
+
+  <footer class="footer">Created by Monteiro Barata</footer>
+</html>

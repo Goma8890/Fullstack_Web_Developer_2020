@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FlexBox Align Content</title>
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			html{
+				height: 100%;
+			}
+
+			@font-face{
+				font-family: kalobsNewFont;
+				src: url('fonts/Roboto-Regular.ttf');
+			}
+
+			@font-face{
+				font-family: kalobsNewFontBI;
+				src: url('fonts/Roboto-BoldItalic.ttf');
+			}
+
+			body{
+				margin: 0;
+				padding: 0;
+				background: #f5f5f5;
+				background: linear-gradient(to bottom, #f5f5f5, #fff);
+				/*padding-top: 48px;*/
+				height: 100%;
+				font-family: kalobsNewFont, Arial, sans-serif;
+				overflow: hidden;
+			}
+
+			.flex{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				/*align-content: stretch;*/
+				/*align-content: center;*/
+				/*align-content: flex-start;*/
+				/*align-content: flex-end;*/
+				/*align-content: space-around;*/
+				align-content: space-between;
+
+				background-color: blue;
+				height: 500px;
+			}
+
+			.col{
+				flex-basis: 26%;
+				flex-shrink: 0;
+				
+				background-color: darkred;
+				color: #fff;
+				border: 1px solid white;
+				height: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex">
+			<div class="col">Flex Items #1</div>
+			<div class="col">Flex Items #2</div>
+			<div class="col">Flex Items #3</div>
+			<div class="col">Flex Items #4</div>
+			<div class="col">Flex Items #5</div>
+			<div class="col">Flex Items #6</div>
+			<div class="col">Flex Items #7</div>
+			<div class="col">Flex Items #8</div>
+		</div>
+
+	</body>
+</html>

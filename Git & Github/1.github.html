@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Beginner</title>
+  </head>
+  <body>
+    <h1>Commands</h1>
+    <ul>
+      <li>git config --global user.name "Antonio Goma"</li>
+      <li>git config --global user.email "monteirobarata@hotmail.com"</li>
+      <li>
+        <!-- Check out -->
+        cat ~/.gitconfig
+      </li>
+    </ul>
+
+    <h2>Creating and Adding and SSH kEY</h2>
+    <ul>
+      <li>ssh-keygen -o</li>
+      <li>Password: 8890</li>
+      <li>cat /c/Users/Antonio Goma/.ssh/id_rsa.pub</li>
+    </ul>
+
+    <h2>How to Clone a Repository</h2>
+    <ul>
+      <li>Download Zip</li>
+      <li>Download using SSH or HTTPS</li>
+      <li>git clone "paste the URL"</li>
+      <li>ls -la</li>
+    </ul>
+
+    <h2>Creating a New Repository</h2>
+    <ul>
+      <li>cd</li>
+      <li>cd documents/</li>
+      <li>cd Git/</li>
+      <li>mkdir test</li>
+      <li>cd test/</li>
+      <li>pwd</li>
+      <li>ls -la</li>
+      <li>echo "# get-essentials" >> README.md</li>
+      <li>ls -la</li>
+      <li>git init</li>
+      <li>ls -la</li>
+      <li>git add README.md</li>
+      <li>git status</li>
+      <li>git commit -m "First commit"</li>
+      <li>git log</li>
+      <li>git remote add origin git@github.com:Goma8890/get-essentials.git</li>
+      <li>git remote -v</li>
+      <li>git push -u origin master</li>
+    </ul>
+
+    <h2>How to push to your Github Repository</h2>
+    <ul>
+      <li>unstaged work ^C</li>
+      <li>stage work ^C</li>
+      <li>commit work ^C</li>
+      <li>push work ^C</li>
+      <li>pwd</li>
+      <li>ls -la</li>
+      <li>vim first-push.txt</li>
+      <li>ls -la</li>
+      <li>git status</li>
+      <li>git add first-push.txt</li>
+      <li>git status</li>
+      <li>git commit -m "First official push"</li>
+      <li>git push origin master ^C</li>
+    </ul>
+
+    <h2>Git status</h2>
+    <ul>
+      <li>ls -la</li>
+      <li>vim first-push.txt</li>
+      <li>set number in vim</li>
+      <li>git status</li>
+      <li>git add first-push.txt or git add .</li>
+      <li>git status</li>
+      <li>git commit -m "Second change to this file"</li>
+      <li>git status</li>
+      <li>git push origin master</li>
+      <li>ls -la</li>
+      <li>rm first-push.txt</li>
+      <li>ls -la</li>
+      <li>git status</li>
+    </ul>
+
+    <h2>Unstaging a file</h2>
+    <ul>
+      <li>git add .</li>
+      <li>git status</li>
+      <li>git reset HEAD first-push.txt</li>
+    </ul>
+
+    <h2>Undeleting a file</h2>
+    <ul>
+      <!-- Recovering the deleted file -->
+      <li>git status</li>
+      <li>git checkout -- first-push.txt</li>
+      <li>git status</li>
+      <li>git ls -la</li>
+      <!-- Deleting the file again -->
+      <li>rm first-push.txt</li>
+      <li>git status</li>
+      <li>ls -la</li>
+    </ul>
+
+    <h2>Git origins and remotes</h2>
+    <ul>
+      <!-- Recovering the deleted file -->
+      <li>git remote -v</li>
+      <!-- Adding new origins -->
+      <li>git push filename</li>
+    </ul>
+
+    <h2>Git braching</h2>
+    <ul>
+      <!-- Creating new branch -->
+      <li>git checkout -b new-branch</li>
+      <li>git branch</li>
+      <li>git status</li>
+      <li>git branch</li>
+      <li>git checkout master</li>
+      <li>git branch</li>
+      <li>git checkout new-branch</li>
+      <li>git status</li>
+      <li>git branch</li>
+    </ul>
+
+    <h2>Merging a branch into master</h2>
+    <ul>
+      <!-- Creating new branch -->
+      <li>git branch</li>
+      <li>git checkout master</li>
+      <li>git branch</li>
+      <li>git pull origin master</li>
+      <li>git merge new-branch</li>
+      <li>git status</li>
+      <li>git ls -la</li>
+      <li>git branch</li>
+      <li>git push origin master</li>
+    </ul>
+
+    <h2>Committing to a new branch</h2>
+    <ul>
+      <li>git branch</li>
+      <li>vim new-branch-file.txt</li>
+      <li>ls -la</li>
+      <li>git status</li>
+      <li>git add new-branch-file.txt</li>
+      <li>git commit -m "New branch file"</li>
+      <li>git status</li>
+      <li>git push origin new-branch</li>
+    </ul>
+
+    <h2>Seeing your Git History</h2>
+    <ul>
+      <li>git log</li>
+    </ul>
+
+    <h2>Downlaoding updates from Github</h2>
+    <ul>
+      <li>cat README.md</li>
+      <li>git branch</li>
+      <li>git pull origin master</li>
+      <li>cat README.md</li>
+      <li>git log</li>
+      <li>git status</li>
+      <li>ls -la</li>
+      <!-- Adding new file -->
+      <li>touch empty-file.txt</li>
+      <li>ls -la</li>
+      <li>git status</li>
+      <li>git add empty-file.txt</li>
+      <li>git status</li>
+      <li>git commit -m "Added a new empty file"</li>
+      <li>git log</li>
+      <!-- You will get an error if you try to push -->
+      <li>git push origin master</li>
+      <!-- In case you run into a conflict between two different works done on the same file -->
+      <li>git pull origin master</li>
+      <!-- It takes you into nano editor -->
+      <li>Ctrl + o</li>
+      <li>Enter</li>
+      <li>Ctrl + exit</li>
+      <li>git log</li>
+      <li>git push origin master</li>
+    </ul>
+
+    <h2>How to get updates from Github</h2>
+    <p>Change first the empty file on Github</p>
+    <ul>
+      <li>git log</li>
+      <li>ls -la</li>
+      <li>git fetch origin master</li>
+      <li>ls -la</li>
+      <li>git log</li>
+      <li>git lg</li>
+      <!-- 
+        You can also try these commands:
+        git log --online --graph --decorate --all
+       -->
+      <li>ls -la</li>
+      <li>git pull origin master</li>
+      <li>ls -la</li>
+      <li>cat not-empty-file.md</li>
+    </ul>
+
+    <h2>Checkout: code-time travel</h2>
+    <ul>
+      <li>git log</li>
+      <li>git checkout 6bc1201298f9c4303bbcd7c321fa1155e46da50e</li>
+      <li>git log</li>
+      <li>ls -la</li>
+      <li>git checkout 3ab26cc5bedcefc724d6112d2881164fe701be2b</li>
+      <li>git status</li>
+      <li>ls -la</li>
+      <li>git checkout new-branch</li>
+      <li>ls -la</li>
+      <li>git checkout master</li>
+      <li>ls -la</li>
+      <li>git log</li>
+      <li>git checkout bdca7470ab9c38f4932e38c6fb85a4e8e89c6cfc</li>
+      <li>ls -la</li>
+      <li>ls</li>
+      <li>git checkout -b timewrap-branch</li>
+      <li>touch timewrap.txt</li>
+      <li>git status</li>
+      <li>git add .</li>
+      <li>git commit -m "Timewrap"</li>
+      <li>git push origin timewrap-branch</li>
+      <li>git log</li>
+      <li>git branch</li>
+      <li>git checkout master</li>
+      <li>git merge timewrap-branch</li>
+      <!-- Sometimes it will take you to none editor so you can merge -->
+      <li>git branch</li>
+      <li>git log</li>
+      <li>git push origin master</li>
+    </ul>
+
+    <h1>From the Chinese</h1>
+    <ul>
+      <li>cd</li>
+      <li>cd documents/</li>
+      <li>cd Git/</li>
+      <li>git clone "URL"</li>
+      <li>ls</li>
+      <li>cd hello</li>
+      <li>ls</li>
+      <li>touch hello.html</li>
+      <li>ls</li>
+      <li>code .</li>
+      <li>git add hello.html</li>
+      <li>git commit -m "write a message of what you did"</li>
+      <li>git status</li>
+      <li>git push</li>
+      <!-- After making changes to your HTML code -->
+      <li>git status</li>
+      <li>git commit -am "write a message of what you changed"</li>
+      <li>git status</li>
+      <li>git push</li>
+
+      <!-- Take the file to your pc -->
+      <li>git pull</li>
+    </ul>
+    <h2>Merge Conflicts</h2>
+    <ul>
+      <li>git commit -am "message here"</li>
+      <li>git pull</li>
+      <!-- once satisfied with the changes -->
+      <li>git commit -am "Fix merge conflict"</li>
+      <li>git push</li>
+
+      <!-- Other git commands -->
+      <li>git log: keeps track of all the commitment made to your code</li>
+    </ul>
+  </body>
+</html>

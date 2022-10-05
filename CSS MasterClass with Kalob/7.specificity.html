@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+      #list {
+        background-color: greenyellow;
+      }
+
+      .first,
+      .second,
+      .third {
+        background-color: khaki;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      #list li {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li class="first">First</li>
+      <li class="second">Second</li>
+      <li class="third">Third</li>
+      <li>No class applied</li>
+    </ul>
+  </body>
+</html>

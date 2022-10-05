@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each Loops</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <h2>For Each Loops</h2>
+
+    <ul>
+      <li class="js-text">Item 1</li>
+      <li class="js-text">Item 2</li>
+      <li class="js-text">Item 3</li>
+      <li class="js-text">Item 4</li>
+      <li class="js-text">Item 5</li>
+      <li class="js-text">Item 6</li>
+      <li class="js-text">Item 7</li>
+      <li class="js-text">Item 8</li>
+      <li class="js-text">Item 9</li>
+      <li class="js-text">Item 10</li>
+      <li class="js-text">Item 11</li>
+      <li class="js-text">Item 12</li>
+      <li class="js-text">Item 13</li>
+      <li class="js-text">Item 14</li>
+      <li class="js-text">Item 15</li>
+      <li class="js-text">Item 16</li>
+      <li class="js-text">Item 17</li>
+    </ul>
+
+    <script>
+      // For Each Loops Sintax. It is a short cut for the For Loops.
+      // For Loops Sintax
+      // for (let index = 0; index < array.length; index++) {
+      //   const element = array[index];
+      // }
+
+      // var names = ["Tony", "Lindy", "Keanu", "MJ"];
+
+      // // Long way using For Loops
+      // for (var i = 0; i < names.length; i++) {
+      //   console.log(names[i]);
+      // }
+
+      // // Short way using For Each Loop
+      // names.forEach(function (name, index) {
+      //   console.log(index, name);
+      // });
+
+      // var lis = document.querySelectorAll(".js-text");
+
+      // lis.forEach(function (node, index) {
+      //   console.log(node.innerText);
+      // });
+
+      // var lis = document.querySelectorAll(".js-text");
+
+      // lis.forEach(function (node, index) {
+      //   node.innerText = index * 12 + " is the number.";
+      // });
+
+      var lis = document.querySelectorAll(".js-text");
+
+      lis.forEach(function (node, index) {
+        if (index >= 10) {
+          node.remove();
+          return false;
+        }
+        // node.innerText = index * 12 + " is the number.";
+      });
+    </script>
+
+    <!-- Bootstrap JS Requirements -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

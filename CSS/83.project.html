@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Project</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+				padding-top: 48px;
+				font-family: 'Roboto', Arial, sans-serif;
+			}
+
+			nav{
+				border: 3px solid #000;
+				padding: 10px 20px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 18px;
+			}
+
+			nav:active{
+				background-color: yellow;
+			}
+			
+			#brand{
+				text-decoration: none;
+				color: black;
+				font-weight: bold;
+				font-size: 20px;
+				height: auto;
+			}
+
+			#brand:hover{
+				color: brown;
+			}
+
+			#brand:active{
+				color: pink;
+			}
+
+			#nav-container{
+				/*border: 1px solid greenyellow;*/
+				border-right: 1px solid greenyellow;
+				float: left;
+				width: 150px;
+				padding: 15px 15px 15px 20px;
+				
+			}
+
+			#nav-title{
+				text-decoration: underline;
+				font-size: 15px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+
+			ul.nav{
+				padding: 0;
+				list-style-type: none;
+			}
+
+			/*ul.nav li{}*/
+
+			ul.nav li a{
+				display: block;
+				width: 100%;
+				color: black;
+				text-decoration: none;
+				padding: 5px;
+			}
+
+			ul.nav li a:hover{
+				background-color: orange;
+				color: orchid;
+			}
+
+			#body{
+				float: left;
+				width: calc(100% - 250px);
+				padding: 15px;
+
+			}
+
+			em{
+				font-weight: bold;
+				text-decoration: underline;
+				color: blue;
+			}
+
+			blockquote{
+				font-style: italic;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				padding: 10px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+
+			blockquote::after{
+				content: '"- Antonio Monteiro';
+			}
+
+			blockquote::before{
+				content: '"';
+			}
+
+			footer{
+				font-size: 12px;
+				padding-top: 25px;
+				clear: both;
+				display: block;
+				background-color: aquamarine;
+				color: #000;
+				margin-top: 70px;
+				float: left;
+				width: 100%;
+			}
+
+			.row{
+				display: block;
+				width: 100%;
+			}
+
+			.full-col, .col1, .col2, .col3{
+				display: inline-block;
+				width: calc(31% - 60px);
+				padding: 0 30px;
+				text-align: center;
+			}
+
+			.full-col{
+				width: calc(100% - 60px);
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="/" id="brand">MySite</a>
+		</nav>
+
+		<div id="nav-container">
+			<div id="nav-title">Navigation</div>
+			<ul class="nav">
+				<li>
+					<a href="#">Link #1</a>
+				</li>
+				<li>
+					<a href="#">Link #2</a>
+				</li>
+				<li>
+					<a href="#">Link #3</a>
+				</li>
+				<li>
+					<a href="#">Link #4</a>
+				</li>
+				<li>
+					<a href="#">Link #5</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="body">
+			<p>
+				Welcome to your first major CSS project. This is designed to be difficult <em>and</em> to give you hands on experience with a real world project.
+			</p>
+			<p>
+				There will be many times in your life as a developer that you will get stuck, you don't know where to start and you never start because it's hard to find the right place to start.
+			</p>
+			<p>
+				But let me tell you this:
+				<blockquote>
+					The <em>best</em> time to start is now.
+					The <em>best</em> palce to start is here.
+					Just get started!
+				</blockquote>
+			</p>
+		</div>
+			<!-- End of Learning code area -->
+		<footer class="row">
+			<div class="col1">
+				Left Column
+			</div>
+			<div class="col2">
+				Middle Column
+			</div>
+			<div class="col3">
+				Right Column
+			</div>
+			<div class="full-col">
+				This should take up the width of 3 columns
+			</div>
+		</footer>
+	</body>
+</html>

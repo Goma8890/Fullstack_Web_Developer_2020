@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Text Decoration</title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+			}
+
+			.underline{
+				text-decoration: underline;
+			}
+
+			.overline{
+				text-decoration: overline;
+			}
+
+			.strike{
+				text-decoration: line-through;
+				text-decoration-color: blue;
+				text-decoration-style: dashed;
+				color: red;
+			}
+
+			/*Overwriting text decoration*/
+			/*.strike{
+				text-decoration: initial;
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<nav>CSS Course by Monteiro</nav>
+
+		<!-- Learning code area -->
+		<p>
+			Hello
+			<span class="underline">this is a test.</span>
+			sentence
+		</p>
+
+		<p>
+			Hello
+			<span class="overline">this is a test.</span>
+			sentence
+		</p>
+
+		<p>
+			Hello
+			<span class="strike">this is a test.</span>
+			sentence
+		</p>
+
+		<!-- End of learning code area -->
+	</body>
+</html>

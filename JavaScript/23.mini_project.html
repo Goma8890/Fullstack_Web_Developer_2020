@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project #4</title>
+  </head>
+
+  <body>
+    <h1>Mini Project #4: Tip Calculator</h1>
+
+    <ol>
+      <li>Create a simple tip calculator</li>
+      <li>It needs to accept 2 parameters</li>
+      <li>Make the tip parameter optional</li>
+      <li>Rturn the totla amount and save it to a var</li>
+    </ol>
+
+    <script>
+      function tip(totalAmount, tip = 10, returnTipOnly = false) {
+        tip = tip / 100; //10 -> 0.10
+        // console.log("tip as a % is", tip);
+
+        var tipAmount = totalAmount * tip;
+        // console.log(tipAmount, "is the tip amount");
+
+        totalAmount = totalAmount + tipAmount;
+        // console.log(tipAmount, "Is the total amount");
+        if (returnTipOnly) {
+          return tipAmount;
+        }
+
+        return totalAmount;
+      }
+
+      var totalBill = tip(25, 10);
+      console.log(totalBill);
+
+      var totalTip = tip(25, 10, true);
+      console.log(totalTip);
+    </script>
+  </body>
+</html>

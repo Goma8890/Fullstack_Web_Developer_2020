@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <style>
+      .box {
+        border: 2px solid red;
+        margin: 20px;
+        padding: 80px;
+      }
+
+      .content {
+        background-color: lightblue;
+      }
+
+      /* Styling Links */
+      a {
+        color: black;
+      }
+
+      /* a:hover {
+        color: lightgreen;
+      } */
+
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: maroon;
+      }
+
+      a:active {
+        color: lime;
+      }
+
+      /* Styling Links */
+      ul {
+        background-color: grey;
+        padding: 10px;
+        margin: 0;
+        list-style: none;
+        width: 50%;
+      }
+
+      ul li {
+        display: inline-block;
+        width: 32%;
+        font-family: "Arial" sans-serif;
+        text-align: center;
+        opacity: 0.5;
+        transition: opacity 500ms linear;
+      }
+
+      li:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      The boxe Model The box model is made of margin, border, padding and
+      content
+    </p>
+    <div class="box">
+      <div class="content">Hello box model</div>
+    </div>
+
+    <p>Styling Links</p>
+    <a href="https://tony.io">Tony.io</a>
+
+    <p>Styling a Lists</p>
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ul>
+  </body>
+</html>

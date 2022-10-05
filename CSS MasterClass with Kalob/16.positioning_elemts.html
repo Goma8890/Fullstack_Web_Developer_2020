@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning Elements</title>
+    <style>
+      .box {
+        border: 1px solid red;
+      }
+
+      .relative {
+        border: 1px solid blue;
+        position: relative;
+        top: 12px;
+      }
+
+      .parent {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        border: 1px solid black;
+        position: relative;
+      }
+
+      .child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background-color: yellow;
+      }
+
+      .child2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background-color: purple;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: green;
+        padding: 20px;
+        color: #fff;
+        font-family: "Arial", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p>There are 4 main settings to work with as front end developer</p>
+    <h1>Position: Static</h1>
+
+    <h2>Position: Relative</h2>
+    <div class="box">
+      <span class="relative">
+        Relative (12px down from where it normally sits)
+      </span>
+    </div>
+
+    <h3>Position: Absolute</h3>
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child2"></div>
+    </div>
+
+    <h4>Position: Fixed</h4>
+    <div class="navbar">Website Name</div>
+  </body>
+</html>

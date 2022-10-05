@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendor Prefixes</title>
+  </head>
+  <body>
+    <li>-webkit-</li>
+    <!-- Safari, Chrome and browsers using the webkit engine -->
+    <li>-moz-</li>
+    <!-- Firefox and other brwosers using Mozilla's browser engine. -->
+    <li>-ms-</li>
+    <!-- Internet Explorer (but not always) -->
+    <li>-o-</li>
+    <!-- Opera -->
+
+    <p>
+      Those go in front of the CSS property only if the feature is still
+      considered experimental.
+    </p>
+    <p>
+      Example of when the border-radius feature was first introduced.
+      <li>-webkit-border-radius: 10px;</li>
+      <li>-moz-border-radius: 10px;</li>
+      <li>-o-border-radius: 10px;</li>
+    </p>
+
+    <p>
+      Nowadays is written only:
+      <li>border-radius: 10px;</li>
+    </p>
+  </body>
+</html>

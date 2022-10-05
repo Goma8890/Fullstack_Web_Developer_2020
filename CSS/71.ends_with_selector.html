@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ends with Selector</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+				padding-top: 48px;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				position: fixed;
+				left: 0;
+				top: 0;
+				/*right: 0;*/
+				width: 100%;
+			}
+
+			#body{
+				padding: 0 10px 20px;
+				height: 600px;
+			}
+
+			#page-title{
+				margin: 0 0 25px 0;
+				padding: 0;
+				border-bottom: 1px solid blue;
+				font-family: 'Roboto', Arial, sans-serif;
+			}
+
+			#footer{
+				padding: 10px;
+				position: fixed;
+			}
+
+			#fot{
+				color: darkred;
+				text-decoration: none;
+			}
+
+			form{
+				border: 1px solid #ccc;
+				padding: 20px;
+			}
+
+			button, label{
+				display: block;
+				width: 100%;
+				margin-top: 10px;
+			}
+
+			button{
+				width: 40%;
+				margin-top: 15px;
+			}
+
+			/*Selecting an elemnt by attributes*/
+			/*input[type]{
+				border: 5px solid red;
+			}*/
+
+			/*[type]{
+				border: 2px solid red;
+				padding: 5px;
+			}*/
+
+			/*Selecting an element by exact value*/
+			[type="text"]{
+				border: 2px solid red;
+			}
+
+			[type="submit"]{
+				border: 2px solid red;
+			}
+
+			/*[for=""]{
+				border: 2px solid red;
+			}*/
+
+			/*[action]{
+				border: 2px solid orange;
+			}*/
+
+			[action="/login"]{
+				border: 2px solid #ccc;
+			}
+
+			/*Selecting an element by contain value*/
+			.fa.fa-question-circle[title~="us"]{
+				border: 1px solid pink;
+			}
+
+			/*Selecting an element by starting with selector*/
+			[href^="/register"]{
+				color: black;
+				text-decoration: none;
+				display: inline-block;
+				padding: 5px 5px 5px 0;
+				margin-right: 15px;
+			}
+
+			/*Selecting an element by ending with selector*/
+			[href$=".pdf"]{
+				/*border: 1px solid black;*/
+				color: orange;
+				text-decoration: none;
+				/*float: left;*/
+				display: inline-block;
+				padding: 5px;
+				/*margin: 10px;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="https://google.com">
+				CSS Course by Monteiro
+				<i class="fa fa-twitter"></i>
+			</a>
+		</nav>
+
+		<div id="body">
+			<h1 id="page-title">Ends with Selector</h1>
+			<!-- Learning code area -->
+
+			<form action="/login">
+				<label for="">Name:</label>
+				<input type="text">
+				<label for="">Email:</label>
+				<input type="email">
+				<i class="fa fa-question-circle" title="Trust us"></i>
+				<button type="submit">Submit</button>
+				<a href="/register.html">Register</a>
+				<a href="/benefits.pdf">Benefits.pdf</a>
+			
+		</div>
+
+		<div id="footer">
+			<a id="fot" href="https://arkmont.com//?ref=css-course" target="_blank">
+				Arkmount.com
+			</a>
+		</div>
+	</body>
+</html>

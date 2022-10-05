@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Transform Translate (2D)</title>
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			html{
+				height: 100%;
+			}
+
+			@font-face{
+				font-family: kalobsNewFont;
+				src: url('fonts/Roboto-Regular.ttf');
+			}
+
+			@font-face{
+				font-family: kalobsNewFontBI;
+				src: url('fonts/Roboto-BoldItalic.ttf');
+			}
+
+			body{
+				margin: 0;
+				padding: 0;
+				background: #f5f5f5;
+				background: linear-gradient(to bottom, #f5f5f5, #fff);
+				/*padding-top: 48px;*/
+				height: 100%;
+				font-family: kalobsNewFont, Arial, sans-serif;
+				overflow: hidden;
+			}
+
+			nav{
+				border: 2px solid #ccc;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #fff;
+				position: fixed;
+				left: 0;
+				top: 0;
+				/*right: 0;*/
+				width: 100%;
+				font-family: 'Shrikhand', cursive;
+			}
+
+			nav a{
+				color: black;
+				text-decoration: none;
+			}
+
+			#body{
+				padding: 55PX 10px 20px;
+				/*height: 600px;*/
+			}
+
+			#page-title{
+				margin: 0 0 25px 0;
+				padding: 0;
+				border-bottom: 1px solid blue;
+				font-weight: 900;
+				font-family: kalobsNewFontBI;
+				color: #fff;
+				text-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+			}
+
+			#footer{
+				bottom: 10px;
+				position: fixed;
+				left: 10px;
+			}
+
+			#footer a{
+				color: darkred;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 13px;
+			}
+
+			.box{
+				width: 150px;
+				height: 150px;
+				background-color: #8c1515;
+				position: relative;
+				left: 25%;
+
+				/*transform: translate(100px, 100px);*/
+			}
+
+			.box::before{
+				content: ' ';
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: #000;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+
+				transform: translate(-20px, -20px);
+				/*transform: translateX(-20px);*/
+				/*transform: translateY(-20px);*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<a href="https://google.com">
+				CSS Course by Monteiro
+				<i class="fa fa-twitter"></i>
+			</a>
+		</nav>
+
+		<div id="body">
+			<h1 id="page-title">Transform Translate (2D)</h1>
+			<!-- Learning code area -->
+
+			<div class="box"></div>
+			
+		</div>
+			<!-- End of Learning code area -->
+		<div id="footer">
+			<a id="fot" href="https://arkmont.com//?ref=css-course" target="_blank">
+				Arkmount.com
+			</a>
+		</div>
+	</body>
+</html>

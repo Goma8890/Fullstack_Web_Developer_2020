@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables: Mergin Cells and Columns</title>
+  </head>
+
+  <body>
+    <table border="1" width="100%">
+      <tr>
+        <th>Color</th>
+        <th>Subcolor</th>
+        <th>Hex value</th>
+        <th>RGB value</th>
+      </tr>
+      <tr>
+        <td rowspan="3" bgcolor="blue">Blue</td>
+        <td>Baby blue</td>
+        <td>#Unkwon</td>
+        <td>rgba(0,0,0)</td>
+      </tr>
+      <tr>
+        <!-- <td>Blue</td> -->
+        <td>Navy blue</td>
+        <td>#Unkwon</td>
+        <td>rgba(0,0,0)</td>
+      </tr>
+      <tr>
+        <!-- <td>Blue</td> -->
+        <td>Ocean blue</td>
+        <td>#Unkwon</td>
+        <td>rgba(0,0,0)</td>
+      </tr>
+    </table>
+    <hr />
+    <!-- Creating 4x4 table -->
+    <table border="1" width="100%">
+      <!-- Table Head -->
+      <thead>
+        <tr>
+          <!-- Table header -->
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <!-- Table row 1 -->
+        <tr>
+          <!-- Table data cell 1-->
+          <!-- Merging columns -->
+          <td colspan="2">Row 1 Cell #1</td>
+          <!-- <td>Row 1 Cell #2</td> -->
+          <td>Row 1 Cell #3</td>
+        </tr>
+
+        <!-- Table row 2-->
+        <tr>
+          <!-- Table data cell 2-->
+          <td>Row 2 Cell #1</td>
+          <!-- Merging columns -->
+          <td colspan="2">Row 2 Cell #2</td>
+          <!-- <td>Row 2 Cell #3</td> -->
+        </tr>
+
+        <!-- Table row 2-->
+        <tr>
+          <!-- Table data cell 2-->
+          <!-- Merging rows -->
+          <td rowspan="2">Row 3 Cell #1</td>
+          <td>Row 3 Cell #2</td>
+          <td>Row 3 Cell #3</td>
+        </tr>
+
+        <!-- Table row 2-->
+        <tr>
+          <!-- Table data cell 2-->
+          <!-- <td>Row 4 Cell #1</td> -->
+          <td>Row 4 Cell #2</td>
+          <td>Row 4 Cell #3</td>
+        </tr>
+      </tbody>
+
+      <!-- Table Foot -->
+      <tfoot>
+        <tr>
+          <!-- Table head -->
+          <th>Footer title 1</th>
+          <th>Footer title 2</th>
+          <th>Footer title 3</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

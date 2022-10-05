@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Advanced</title>
+  </head>
+  <body>
+    <h1>Viewing File Differences</h1>
+    <ul>
+      <li>@todo</li>
+      <li>git diff filename.ext ^C</li>
+      <li>ls -la</li>
+      <li>vim README.md</li>
+      <li>git status</li>
+      <li>git diff README.md</li>
+      <li>vim README.md</li>
+      <li>git status</li>
+      <li>git diff README.md</li>
+      <li>git status</li>
+      <li>git diff README.ME</li>
+      <li>git status</li>
+      <li>git add README.md</li>
+      <li>git commit -m "Readme update commit"</li>
+      <li>git push origin master</li>
+    </ul>
+
+    <h2>How to Ignore Files</h2>
+    <ul>
+      <li>On Mac we use: .DS_Store</li>
+      <li>Other computers we must se: .icon</li>
+      <li>vim .todo</li>
+      <li>git status</li>
+      <li>vim .gitignore. Then add the files you want to ignore</li>
+      <li>git status</li>
+      <li>git add .gitignore</li>
+      <li>git commit -m "Added a gitignore file"</li>
+      <li>git push origin master</li>
+    </ul>
+
+    <h2>Create a Custom Git Alias</h2>
+    <ul>
+      <li>,,gl : command does not exist</li>
+      <li>git lg: command does not exist</li>
+      <li>vim ~/.gitconfig</li>
+      <li>git lg</li>
+    </ul>
+
+    <h2>The Git lg alias code</h2>
+
+    <h2>Fixing Git Commit Messages</h2>
+    <ul>
+      <li>touch bad-commit-mesage.txt</li>
+      <li>git staus</li>
+      <li>git add .</li>
+      <li>git commit -m "A tpoy here"</li>
+      <li>git lg</li>
+      <li>git comit --amend</li>
+      <li>git push origin master</li>
+      <li>git lg</li>
+    </ul>
+
+    <h2>How to Fork a Repo</h2>
+    <ul>
+      <li>It is done inside Github</li>
+      <li>You can fork a repository</li>
+      <li>You can also delete it</li>
+    </ul>
+
+    <h2>Git Issues</h2>
+    <ul>
+      <li>It is done inside Github</li>
+    </ul>
+
+    <h2>How to Open a Pull Request</h2>
+    <ul>
+      <li>git branch</li>
+      <li>git checkout -b pr-test</li>
+      <li>git branch</li>
+      <li>vim README.md</li>
+      <li>git status</li>
+      <li>git diff README.md</li>
+      <li>git add README.md</li>
+      <li>git commit -m "Uppdate readme"</li>
+      <li>git branch</li>
+      <li>git push origin pr-test</li>
+      <p>Once the pull request is done:</p>
+      <li>git branch</li>
+      <li>git checkout master</li>
+      <li>git pull origin master</li>
+      <li>cat README.md</li>
+      <li>git branch</li>
+      <li>git branch -d pr-test</li>
+      <li>git branch</li>
+      <p>
+        Exercise to do: kalobTaulien/git-essentials fork it clone it make a
+        change commit to ur new repository go to his repo open pull request open
+        new pull request
+      </p>
+    </ul>
+
+    <h2>Undoing a Commint</h2>
+    <ul>
+      <li>git log --oneline</li>
+      <p>Two ways to undo a commit: soft reset or hard rest</p>
+      <li>touch sample.txt</li>
+      <li>git status</li>
+      <li>git add sample.txt</li>
+      <li>git commit -m "Undo ths commit please"</li>
+      <li>git log --oneline</li>
+      <li>git reset --hard ID origin/master</li>
+      <li>git log --oneline</li>
+      <li>git status</li>
+      <li>ls -la</li>
+      <li>touch sample.txt</li>
+      <li>git status</li>
+      <li>git add .</li>
+      <li>git status</li>
+      <li>git commit -m "Undo this commit but keep the file"</li>
+      <li>git log --oneline</li>
+      <li>git reset --soft origin/master</li>
+      <li>git log --oneline</li>
+      <li>git status</li>
+      <li>git reset sample.txt</li>
+      <li>git status</li>
+      <li>rm sample.txt</li>
+      <li>git log --online</li>
+    </ul>
+
+    <h2>Force Pushing</h2>
+    <ul>
+      <li>touch undo-me.txt</li>
+      <li>git status</li>
+      <li>git add undo-me.txt</li>
+      <li>git status</li>
+      <li>git commit -m "Remove this commit from githung"</li>
+      <li>git push origin master</li>
+      <li>git log --oneline</li>
+      <li>git reset --hard ID</li>
+      <li>git log --oneline</li>
+      <li>git lg</li>
+      <li>git push origin master</li>
+      <li>git push origin master -f or --force</li>
+      <li>git lg</li>
+    </ul>
+
+    <h2>How to Rebase</h2>
+    <ul>
+      <li>git lg</li>
+      <li>git checkout -b rebase-branch</li>
+      <li>git branch</li>
+      <li>touch rebase-file.txt</li>
+      <li>git status</li>
+      <li>git add .</li>
+      <li>git commit -m "Sample rebase"</li>
+      <li>git log --oneline</li>
+      <li>git lg</li>
+      <li>git branch</li>
+      <li>git checkout mastclearer</li>
+      <li>git rebase rebase-branch</li>
+      <li>git lg</li>
+    </ul>
+
+    <h2>Resolving Merge and Rebase Conflicts</h2>
+    <ul>
+      <li>vim merge-conflict.txt</li>
+      <li>git status</li>
+      <li>git add .</li>
+      <li>git commit -m "Merge conflict file added locally"</li>
+      <li>git push origin master</li>
+      <li>git pull origin master</li>
+      <li>git status</li>
+      <li>git diff merge-conflict.txt</li>
+      <li>vim merge-conflict.txt</li>
+      <li>git status</li>
+      <li>git add merge-conflict.txt</li>
+      <li>git commit</li>
+      <li>git log --oneline</li>
+      <li>git push origin master</li>
+      <li>git status</li>
+      <p>Rebase conflict</p>
+      <li>git branch</li>
+      <li>vim rebase-conflict.txt</li>
+      <li>git status</li>
+      <li>git add rebase-conflict</li>
+      <li>git commit -m "Rebase conflict example"</li>
+      <li>git lg</li>
+      <li>git log --oneline</li>
+      <li>git checkout ID</li>
+      <li>git log --online</li>
+      <li>git checkout -b rebase-conflict-branch</li>
+      <li>git branch</li>
+      <li>vim rebase-conflict.txt</li>
+      <li>git branch</li>
+      <li>git status</li>
+      <li>git add .</li>
+      <li>git commit -m "Rebase conflict file from a branch"</li>
+      <li>git lg</li>
+      <li>git checkout master</li>
+      <li>git branch</li>
+      <li>git rebase rebase-conflict-branch</li>
+      <li>git status</li>
+      <p>You can continue or: use git rebase --abort</p>
+      <li>git diff</li>
+      <li>vim rebase-conflict.txt</li>
+      <li>git status</li>
+      <li>git diff</li>
+      <li>git status</li>
+      <li>git add rebase-conflict.txt</li>
+      <li>git status</li>
+      <li>git rebase --continue</li>
+      <li>git log --oneline</li>
+      <li>git lg</li>
+    </ul>
+
+    <h2>How to Stash Code</h2>
+    <ul>
+      <li>git branch stash-example</li>
+      <li>git branch</li>
+      <li>git checkout stash-example</li>
+      <li>git branch</li>
+      <li>vim README.md</li>
+      <li>git status</li>
+      <li>git diff</li>
+      <li>git branch</li>
+      <li>git status</li>
+      <li>git git checkout master</li>
+      <li>git status</li>
+      <li>git diff</li>
+      <li>git branch</li>
+      <li>git checkout stash-example</li>
+      <li>git branch</li>
+      <li>git status</li>
+      <li>git stash</li>
+
+      <li>git status</li>
+      <li>git stash list</li>
+      <li>git checkout master</li>
+      <li>git branch</li>
+      <li>vim README.md</li>
+      <li>git status</li>
+      <li>git diff</li>
+      <li>git add README.md</li>
+      <li>git commit -m "Work on rush task"</li>
+      <li>git log --oneline</li>
+      <li>git lg</li>
+      <li>git checkout stash-example</li>
+      <li>git lg</li>
+      <li>git stash list</li>
+      <li>git stash apply</li>
+      <li>git diff</li>
+      <li>git lg</li>
+      <li>git stash list</li>
+      <li>git stash drop</li>
+      <li>git stash list</li>
+      <li>git status</li>
+      <li>vim README.md</li>
+      <li>git lg</li>
+    </ul>
+
+    <h2>Adding tags to your Commits</h2>
+    <ul>
+      <li>git log --oneline</li>
+      <li>git tag v0.1</li>
+      <li>git log --oneline</li>
+      <li>git tag</li>
+      <li>git push origin v0.1</li>
+      <li>git log --oneline</li>
+      <li>git checkout ID</li>
+      <li>git log --oneline</li>
+      <li>git lg</li>
+      <li>git tag typo-tag</li>
+      <li>git lg</li>
+      <li>git checkout ID</li>
+      <li>git lg</li>
+      <li>git tag beta</li>
+      <li>git lg</li>
+      <li>git push origin --tags</li>
+      <p>Deleting a tag</p>
+      <li>git tag</li>
+      <li>git tag -d tagname</li>
+      <li>git tag</li>
+      <li>git push origin --delete tagname</li>
+      <li>git checkout master</li>
+      <li>git lg</li>
+      <li>git checkout beta</li>
+      <li>git lg</li>
+      <li>git checkout v0.1</li>
+      <li>git lg</li>
+      <li>git checkou master</li>
+      <li>git lg</li>
+    </ul>
+  </body>
+</html>

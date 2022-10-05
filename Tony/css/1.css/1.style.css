@@ -1,0 +1,30 @@
+/* Styling the selector elements */
+body {
+  background-color: gray;
+}
+h1 {
+  background-color: rgb(43, 226, 98);
+  color: white;
+}
+
+/* Styling a class element */
+.font-red {
+  color: rgb(170, 54, 54);
+}
+.font-green {
+  color: rgb(50, 35, 182);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Styling an ID element*/
+#unique {
+  border: 5px dashed black;
+}
+#unique1 {
+  font-size: 20px;
+}
+#unique2 {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(202, 86, 196, 0.815);
+}

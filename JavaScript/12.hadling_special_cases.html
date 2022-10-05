@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If/Else If/Else</title>
+  </head>
+
+  <body>
+    <script>
+      // var name = "Tony";
+      var familyMember = "Tony";
+
+      //   if(name == "Tony"){
+      //       do something in here
+      //   } elese{
+      //       if(name == "Lindy"){
+      //           Lindy action in here
+      //       } else{
+      //           if(name == "Toy"){
+      //               Toy action in here
+      //           } elese{
+
+      //           }
+      //       }
+      //   }
+      // There are two ways to do this
+      // Main way
+      if (name == "Tony") {
+        console.log("AWESOME");
+      } else if (name == "Lindy") {
+        console.log("Meow");
+      } else if (name == "Toy") {
+        console.log("Little meow");
+      } else {
+        console.warn("Not handled");
+      }
+
+      //   Other way using switch statement
+      switch (familyMember) {
+        case "Tony":
+          console.log("Hi Tony");
+          break;
+        case "Toy":
+          console.log("Hi Toy");
+          break;
+        default:
+          console.warn("Not handled");
+          break;
+      }
+    </script>
+  </body>
+</html>

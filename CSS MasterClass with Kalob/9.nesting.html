@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesting (Specificity Problems)</title>
+    <style>
+      .parent .child {
+        background-color: blue;
+      }
+
+      .child {
+        background-color: red !important;
+        /* Notice the !important */
+        /* Overwriting the styling without nesting the same way. */
+      }
+
+      .parent .child,
+      .child {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Nesting makes overwriting styles difficult. Here’s a simple example:</p>
+    <div class="parent">
+      <div class="child">I should have a red background</div>
+    </div>
+    <p>
+      CSS will always render styling from the top of the file to the bottom of
+      the file, and the first files can be overwritten by newer files.
+    </p>
+    <p>
+      To solve nesting problems, there's a better way or solutions available.
+      One of the soluctions is called BEM: getbem.com (http://getbem.com/)
+    </p>
+  </body>
+</html>

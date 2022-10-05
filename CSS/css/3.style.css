@@ -1,0 +1,16 @@
+body{
+	background-color: gray;
+}
+
+h2{
+	color: darkred;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h4{
+	color: aquamarine;
+	font-size: 30px;
+	padding: 10px;
+	text-align: center;
+}

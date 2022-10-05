@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project #3</title>
+  </head>
+
+  <body>
+    <h1>Mini Project #3</h1>
+
+    <ol>
+      <li>Ask the user for a number</li>
+      <li>Cast the input to a number</li>
+      <li>Make sure the number is valid</li>
+      <li>If the number is over 18, chnage some text on the page</li>
+    </ol>
+
+    <h4 id="elem"></h4>
+    <script>
+      var number = prompt("Enter a number:");
+      console.log(typeof number);
+      number = Number(number);
+      console.log(typeof number);
+
+      //   if (number) {
+      //     if (number >= 18) {
+      //       var elem = document.getElementById("elem");
+      //       elem.innerHTML = "You are 18 or older";
+      //     }
+      //   }
+
+      //   Using one if statement only
+      if (number && number >= 18) {
+        var elem = document.getElementById("elem");
+        elem.innerHTML = "You are 18 or older";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Multiple Media Queries</title>
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			html{
+				height: 100%;
+			}
+
+			*{
+				box-sizing: border-box;
+			}
+
+			@font-face{
+				font-family: kalobsNewFont;
+				src: url('fonts/Roboto-Regular.ttf');
+			}
+
+			@font-face{
+				font-family: kalobsNewFontBI;
+				src: url('fonts/Roboto-BoldItalic.ttf');
+			}
+
+			body{
+				margin: 0;
+				padding: 0;
+				background: #f5f5f5;
+				background: linear-gradient(to bottom, #f5f5f5, #fff);
+				/*padding-top: 48px;*/
+				height: 100%;
+				font-family: kalobsNewFont, Arial, sans-serif;
+				overflow: hidden;
+			}
+
+			.nav{
+				display: flex;
+				width: 100%;
+				border-bottom: 1px solid #ccc;
+				box-sizing: border-box;
+				padding: 10px 20px;
+				margin-bottom: 40px;
+			}
+
+			.brand{
+				text-decoration: none;
+				color: #000;
+				font-size: 20px;
+				font-weight: bold;
+				/*border: 1px solid red;*/
+				flex-basis: 200px;
+				flex-grow: 1;
+				flex-shrink: 0;
+			}
+
+			.nav-buttons{
+				text-align: right;
+				flex-basis: 50%;
+				flex-grow: 1;
+				flex-shrink: 1;
+			}
+
+			.nav-buttons a{
+				text-decoration: none;
+				color: #000;
+				font-size: 15px;
+				display: inline-block;
+				padding: 5px;
+				margin: 0 5px;
+			}
+
+			.body{
+				display: flex;
+				margin-bottom: 40px;
+			}
+			
+			.left-column, .center-column, .right-column{
+				border: 1px solid darkred;
+				flex: 1 1 33%;
+				padding: 0 20px;
+			}
+
+			 .center-column{
+			 	flex-basis: 50%;
+			 	flex-shrink: 0;
+			 }
+
+			 .footer{
+			 	display: flex;
+			 	background-color: #111;
+			 	color: #fff;
+			 	justify-content: space-around;
+			 	padding: 50px;
+			 }
+
+			 .footer div{
+			 	flex-basis: 20%;
+			 	border: 1px solid blue;
+			 }
+
+			 .left-column a{
+			 		display: flex;
+			 		border: 1px solid red;
+			 		padding: 5px 0;
+			 		text-decoration: none;
+			 		color: black;
+			 	}
+
+			 	.adv{
+			 		display: block;
+			 		height: 200px;
+			 		background-color: #ccc;
+			 		border: 1px solid #aaa;
+			 		margin-bottom: 10px;
+			 	}
+
+			 /*Media Queries to make the website responsive*/
+			 @media(max-width: 768px) {
+			 	.body, .footer{
+			 		flex-wrap: wrap;
+			 	}
+			 	.footer div{
+			 		flex:0 0 50%;
+			 		border: 1px solid white;
+			 		margin-bottom: 10px;
+			 	}
+
+			 	.left-column, .center-column, .right-column{
+			 		flex-basis: 100%;
+			 		flex-shrink: 0;
+			 	}
+
+			 	.center-column{
+			 		order: 1;
+			 	}
+
+			 	.left-column{
+			 		order: 2;
+			 	}
+
+			 	.right-column{
+			 		order: 3;
+			 	}
+			 
+			 	.right-column{
+			 		display: none;
+			 	}
+			 }
+
+			 @media (max-width: 425px) {
+
+			 	.footer div{
+			 		flex:0 0 100%;
+			 		padding: 10px 20px;
+			 		margin-bottom: 10px;
+			 		border: 0;
+			 		text-align: center;
+			 	}
+
+			 	.left-column, .center-column, .right-column{
+			 		margin-bottom: 10px;
+			 		padding: 10px 20px;
+			 	}
+
+			 	.right-column{
+			 		display: block;
+			 	}
+			 }
+
+			 /*Hidding contents you do not want to print*/
+			 @media print {
+				.nav, .footer, .left-column, .right-column{
+					display: none;
+				}
+
+				.center-column{
+					border: 0;
+				}	 	
+			 }	
+
+			 .blue{
+			 	/*background-color: blue;*/
+			 	background-color: yellow;
+			 	padding: 10px;
+			 }	
+			 /*We have to ways to make sure the class blue is not allows blue*/
+			/* @media (min-width: 600px) and (max-width: 1000px) {
+			 	.blue{
+			 		background-color: yellow;
+			 	}
+			 }*/
+			 
+			 /*Another way is to write the two media queries separated and we excahnge the background-colors as well as the media widths*/
+			  @media (max-width: 600px) {
+			 	.blue{
+			 		background-color: blue;
+			 	}
+			 }
+
+			  @media (min-width: 1000px) {
+			 	.blue{
+			 		background-color: blue;
+			 	}
+			 }
+		</style>
+	</head>
+
+	<body>
+		<!-- Flex Container -->
+		<nav class="nav">
+			<!-- Flex Itemns -->
+			<a href="/" class="brand">
+				CSS Course
+			</a>
+			<!-- Flex Item -->
+			<div class="nav-buttons">
+				<a href="/register">Sign Up</a>
+				<a href="/login">Login</a>
+			</div>
+		</nav>
+
+		<div class="blue">
+			Blue section
+		</div>
+
+		<!-- Flex Container -->
+		<div class="body">
+			<!-- Flex Item -->
+			<div class="left-column">
+				<h4>Navigation</h4>
+				<a href="#">Nav1</a>
+				<a href="#">Nav2</a>
+				<a href="#">Nav3</a>
+			</div>
+			<!-- Flex Item -->
+			<div class="center-column">
+				<h1>Hello world</h1>
+				<p>This is a responsive web design</p>
+			</div>
+			<!-- Flex Item -->
+			<div class="right-column">
+				<div class="adv">
+					
+				</div>
+				<div class="adv">
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- Flex Container -->
+		<div class="footer">
+			<div>
+				Column 1
+			</div>
+			<div>
+				Column 2
+			</div>
+			<div>
+				Column 3
+			</div>
+			<div>
+				Column 4
+			</div>
+		</div>
+	</body>
+</html>

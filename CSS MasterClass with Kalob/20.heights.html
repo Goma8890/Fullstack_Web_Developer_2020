@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heights</title>
+    <style>
+      .set-height {
+        background-color: rebeccapurple;
+        /* It is not the exact height */
+        /* height: 100%; */
+
+        /* Using exact heights */
+        height: 90px;
+      }
+
+      /* Exact height */
+      .parent {
+        background-color: salmon;
+        height: 90px;
+      }
+
+      /* Relative height */
+      .set-height-2 {
+        background-color: slateblue;
+        height: 50%;
+      }
+
+      .vh50 {
+        height: 50vh;
+        background-color: springgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="set-height">This should be 100% tall</div>
+    <!-- Relative height to the container -->
+    <!-- There are 2 ways to do this: -->
+    <!-- 1. Relative to the container it's in (parent element) -->
+    <div class="parent">
+      <div class="set-height-2">This should be 90px tall</div>
+    </div>
+    <!-- Realtive to viewport -->
+    <div class="vh50">This should be 50vh tall</div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Box Model</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        padding: 50px;
+        margin: 50px;
+      }
+
+      .content {
+        background-color: yellow;
+      }
+
+      .paddingExample {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10px 20px 30px 40px;
+
+        /* Can be written also as */
+        /* padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px; */
+
+        /* If all sides are equal you simply write it as */
+        /* padding: 10px; */
+
+        /* Margin is also written the same way by replacing the word padding with margin */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="content">
+        There's a padding outside and inside the balck box.
+      </div>
+    </div>
+
+    <div class="paddingExample">&larr; &rarr;</div>
+  </body>
+</html>

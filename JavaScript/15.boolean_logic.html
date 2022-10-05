@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean Logic</title>
+  </head>
+
+  <body>
+    <!-- Boolean means either something is True (1) or False (0)-->
+    <script>
+      // var isCat = false;
+
+      // if (isCat) {
+      //   console.log("TONY IS A CAT");
+      // } else {
+      //   console.log("IS NOT A CAT");
+      // }
+
+      var name = prompt("Enter name", "tony");
+
+      if (name.toLowerCase() == "tony") {
+        var isCat = true;
+      } else {
+        var isCat = false;
+      }
+
+      // Some other logic here based on the variable isCat
+      if (isCat) {
+        alert("You're a cat!");
+      } else {
+        alert("You're NOT a cat!");
+      }
+
+      //Shortcut if/else statement
+      if (isCat == false) {
+        alert("not a cat");
+      }
+
+      //Another way for shortcut (if isCat is false)
+      if (!isCat) {
+      }
+
+      // This is the false block to execute
+      if (isCat != true) {
+      }
+
+      // We can also use true = 1 or false = 0
+      var isCat = 1; //true
+      var isCat = 0; //false
+
+      if (isCat) {
+        // true
+      }
+
+      if (!isCat) {
+        // false
+      }
+    </script>
+  </body>
+</html>
