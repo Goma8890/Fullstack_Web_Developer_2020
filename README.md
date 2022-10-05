@@ -10,25 +10,23 @@ The first "Complete Web Developer Course" on Udemy!! See why other teachers used
 
 This course is for Windows, MacOS and Linux users!
 
-Over 66 hours of video
+  Over 66 hours of video
 
-Full lifetime access
+  Full lifetime access
 
-Certificate of completion
+  Certificate of completion
 
-Source code included
+  Source code included
 
 ***
-
-
 
 You're probably on this page because you want to learn web development. Not just one little piece, but ALL of it. 
 
 Or maybe you’re coding already but you want to make BETTER websites?
 
-I was in your shoes once and THIS is the course I WISH I HAD. 
+I was in your shoes once and #### THIS is the course I WISH I HAD. 
 
-Welcome to The Complete Fullstack Web Developer Course
+#### Welcome to The Complete Fullstack Web Developer Course
 
 This was the first "Complete Web Development" course on Udemy. It's extremely comprehensive and I explain EVERYTHING you need to know, step by step. There's a reason why there are so many "Complete Web Development" courses on Udemy today -- they took what worked and made spin off courses.
 
